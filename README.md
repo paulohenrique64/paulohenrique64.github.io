@@ -1,5 +1,5 @@
-### Hi there 👋
+### Hello Friend 👋
 
-- 🔭 Estudando Ciência da Computação na Universidade Federal de Lavras
+- 🔭 Sou estudante do curso de Ciência da Computação na Universidade Federal de Lavras
 - ⚡ Atualmente estudando Desenvolvimento Web
   
