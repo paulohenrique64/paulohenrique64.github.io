@@ -1,0 +1,292 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #091133;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(9,17,51,0.8);
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+header > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header > a:hover {
+  color: #045ab0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 50px;
+  color: #fff;
+}
+
+.logo h1 {
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.buttons {
+  margin-top: 5%;
+}
+
+.buttons > a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  width: 160px;
+  padding: 20px;
+  border-radius: 15px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15pt;
+  background: #0284ff;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #0284ff;
+  letter-spacing: 2px;
+}
+
+.buttons > a:hover {
+  background: #045ab0;
+}
+
+/* about */
+
+.about {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+}
+
+.portfolio > img {
+  border-radius: 100%;
+  width: 30vh;
+  box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.322);
+}
+
+.text-content {
+  width: 45%;
+  height: auto;
+}
+
+.text-content > h1 {
+  margin: 0;
+  text-align: left;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+
+.text-content > h2 {
+  text-align: left;
+  font-weight: 520;
+  letter-spacing: 2px;
+}
+
+.comp-junior {
+  text-decoration: none; 
+  color: #0284ff;
+}
+
+/* icons and social buttons  */
+
+.buttons-and-icons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+
+.icons > img {
+  height: auto;
+  margin-left: 2.5%;
+  width: 43px;
+}
+
+.socialbtns {
+  width: 49%;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns ul {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.socialbtns li {
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 40px;
+  height: 28px;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+	padding-top: 12px;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #fff;
+	background-color: #045ab0;
+	border: 1px solid #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #040714;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: #091133;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #040714;        
+  border: 0; 
+}
+
+/* responsividade  */
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse; 
+    align-items: center;
+  }
+
+  .text-content {
+    width: 70%;
+  }
+
+  .buttons-and-icons {
+    flex-direction: column;
+  }
+
+  .socialbtns {
+    width: 100%;
+  }
+
+  .socialbtns ul {
+    margin: 0;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px)  {
+  .logo {
+    font-size: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons > a {
+    margin-bottom: 5%;
+    width: 150px;
+    padding: 10px;
+    font-size: 12pt;
+  }
+
+  .text-content {
+    font-size: 12px;
+  }
+
+  .portfolio {
+    margin-top: 7%;
+  }
+}
