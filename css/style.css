@@ -123,7 +123,7 @@ header > a:hover {
 }
 
 .text-content {
-  width: 45%;
+  width: 35%;
   height: auto;
 }
 
@@ -150,13 +150,14 @@ header > a:hover {
 .buttons-and-icons {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 65%;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  margin-left: 5%;
+  margin-right: 23%;
+  margin-left: 0%;
 }
 
 .icons > img {
@@ -166,7 +167,7 @@ header > a:hover {
 }
 
 .socialbtns {
-  width: 49%;
+  width: 100%;
 }
 
 a, a:hover {
